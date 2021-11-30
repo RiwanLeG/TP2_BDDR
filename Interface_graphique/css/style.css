@@ -1,0 +1,11 @@
+body{
+    padding: 20px;
+    background-color: #e0e0e0;
+}
+#liste_classe{
+    column-count: 5;
+}
+
+#liste_schools{
+    column-count: 5;
+}
