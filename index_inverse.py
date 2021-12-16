@@ -18,7 +18,7 @@ def createRdd():
 
     # Alternatively, a DataFrame can be created for a JSON dataset represented by
     # an RDD[String] storing one JSON object per string
-    json_path = "C:/Users/anwal/Downloads/monsters.json"
+    json_path = "monsters.json"
     json_file = open(json_path)
     json_object = json.load(json_file)
     monsterRdd = sc.parallelize(json_object)
@@ -48,11 +48,15 @@ print("----------------------")
 output = monster.rdd.flatMap(lambda x: fun1(x))\
     .groupByKey()
 
-
+spells = []
 for elt in sorted(output.collect()):
-    chaine=""
+    monster = {}
+    monsters = []
     for elt2 in elt[1]:
-        chaine +=elt2 + " | "
-    print(elt[0], "--", chaine)
+        monsters.append(elt2)
+    monster["name"] = elt[0]
+    monster["monsters"] = monsters
+    spells.append(monster)
 
-
+with open("spells2.json", "w") as jsonFile:
+    json.dump(spells, jsonFile, indent = 4)
