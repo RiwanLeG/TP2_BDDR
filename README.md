@@ -6,7 +6,6 @@ Exercice 1 :
   - Le résultat s'affiche dans le fichier resultExo1.json
 
 Exercice 2 : 
-  Avant de lancer le programme :
   - Télécharger l'ensemble des images des sorts : https://drive.google.com/drive/folders/1B9pkMtnVuG0yuvgQb_CeOKt0w3uTfiTc
   - Le mettre dans un dossier image/ à la racine du projet.
   - Assurez-vous d'avoir le fichier spell.json à la racine du projet
