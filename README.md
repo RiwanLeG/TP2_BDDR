@@ -7,7 +7,7 @@ Exercice 1 :
 
 Exercice 2 : 
   Avant de lancer le programme :
-  - Il faut télécharger l'ensemble des images des sorts : https://drive.google.com/drive/folders/1B9pkMtnVuG0yuvgQb_CeOKt0w3uTfiTc
+  - Télécharger l'ensemble des images des sorts : https://drive.google.com/drive/folders/1B9pkMtnVuG0yuvgQb_CeOKt0w3uTfiTc
   - Le mettre dans un dossier image/ à la racine du projet.
   - Assurez-vous d'avoir le fichier spell.json à la racine du projet
   - Lancer spellsearch.py pour accéder à l'interface de recherche de sorts.
